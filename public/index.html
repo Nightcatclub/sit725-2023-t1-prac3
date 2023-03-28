@@ -59,13 +59,13 @@
           </div>
           <div class="col s12 center-align">
             <a
-              class="waves-effect waves-light btn click-me-button"
+              class="waves-effect waves-light btn click-me-button modal-trigger"
               id="clickMeButton"
+              data-target="modal1"
               ><i class="material-icons left">auto_fix_high</i>Click Me</a
             >
           </div>
         </div>
-
         <div class="row" id="card-section">
           <div class="col s4 center-align">
             <div class="card medium">
@@ -76,7 +76,7 @@
                 <span class="card-title activator grey-text text-darken-4"
                   >Monkey<i class="material-icons right">more_vert</i></span
                 >
-                <p><a href="#"> I AM Monkey</a></p>
+                <p><a href="#">I AM Monkey</a></p>
               </div>
               <div class="card-reveal">
                 <span class="card-title grey-text text-darken-4"
@@ -90,8 +90,47 @@
           </div>
         </div>
       </div>
+      <!-- Modal Structure continues on next slide-->
+      <div id="modal1" class="modal modal-fixed-footer">
+        <div class="row modal-content">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s6">
+                <input
+                  placeholder="Placeholder"
+                  id="first_name"
+                  type="text"
+                  class="validate" />
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate" />
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="password" type="password" class="validate" />
+                <label for="password">Password</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate" />
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 center-align">
+                <a class="waves-effect waves-light btn" id="formSubmit"
+                  >submit</a
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </main>
-
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
